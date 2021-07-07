@@ -8,11 +8,11 @@
             <form string="Backlink">
                 <sheet>
                     <group>
-                        <field name="domain"/>
+                        <field name="domain_url"/>
                         <field name="comment"/>
                     </group>
                     <notebook>
-                        <page string="">
+                        <page string="Items">
                             <field name="item_ids">
                                 <tree editable="bottom">
                                     <field name="date"/>
@@ -32,7 +32,7 @@
         <field name="model">backlink.generator</field>
         <field name="arch" type="xml">
             <tree name="Backlink">
-                <field name="domain"/>
+                <field name="domain_url"/>
             </tree>
         </field>
     </record>
