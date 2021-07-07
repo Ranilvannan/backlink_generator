@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+backlink_generator_admin,backlink.generator.admin,model_backlink_generator,backlink_admin,1,1,1,1
+backlink_generator_item_admin,backlink.generator.item.admin,model_backlink_generator_item,backlink_admin,1,1,1,1

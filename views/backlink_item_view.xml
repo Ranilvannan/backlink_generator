@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="backlink_generator_item_form" model="ir.ui.view">
+        <field name="name">backlink.generator.item.form</field>
+        <field name="model">backlink.generator.item</field>
+        <field name="arch" type="xml">
+            <form string="Backlink Item">
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="domain_url"/>
+                        <field name="backlink_id"/>
+                        <field name="comment"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="backlink_generator_item_tree" model="ir.ui.view">
+        <field name="name">backlink.generator.item.tree</field>
+        <field name="model">backlink.generator.item</field>
+        <field name="arch" type="xml">
+            <tree name="Backlink Item">
+                <field name="date"/>
+                <field name="domain_url"/>
+                <field name="backlink_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="backlink_generator_item_action" model="ir.actions.act_window">
+        <field name="name">Backlink Item</field>
+        <field name="res_model">backlink.generator.item</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="backlink_generator_item_menu"
+              name="Backlink Item"
+              parent="backlink_menu"
+              action="backlink_generator_item_action"
+              sequence="20"/>
+
+</odoo>
